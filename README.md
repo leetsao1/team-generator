@@ -3,7 +3,6 @@
   URL: https://github.com/leetsao1/team-generator
   GITHUB: https://github.com/leetsao1
 
-![Gif](./Assets/startup.gif)
 ![Gif](./Assets/demo.gif)
 
 
