@@ -3,8 +3,8 @@
   URL: https://github.com/leetsao1/team-generator
   GITHUB: https://github.com/leetsao1
 
-    ![](./Assets/startup.gif) 
-    ![](./Assets/demo.gif) 
+![Gif](./Assets/startup.gif)
+![Gif](./Assets/demo.gif)
 
 
   License: MIT:
