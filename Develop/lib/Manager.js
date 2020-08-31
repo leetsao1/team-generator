@@ -1,21 +1,17 @@
-function managerConstructor(name, id, email, number) {
-    this.name = name,
-    this.id = id,
-    this.email = email,
-    this.number = number,
-    this.role = "Manager",
-    this.getName = function () {
-        console.log(this.name);
-    },
-    this.getId = function () {
-        console.log(this.id);
-    },
-    this.getEmail = function () {
-        console.log(this.email);
-    },
-    this.getRole = function () {
-        console.log("Manager");
-    }
-  }
+var Employee = require ("./Employee");
 
-  module.exports = managerConstructor;
+class Manager extends Employee {
+    constructor (name, id, email, number) {
+        super(name,id,email);
+        this.number = number;
+    };
+        getOfficeNumber() {
+            return (this.number);
+        };
+        getRole () {
+            return "Manager";
+        }
+};
+
+module.exports = Manager
+

@@ -1,23 +1,18 @@
-function engineerConstructor(name, id, email, gitHub) {
-    this.name = name,
-    this.id = id,
-    this.email = email,
-    this.gitHub = gitHub,
-    this.getName = function () {
-        console.log(this.name);
-    },
-    this.getId = function () {
-        console.log(this.id);
-    },
-    this.getEmail = function () {
-        console.log(this.email);
-    },
-    this.getRole = function () {
-        console.log("Engineer");
-    },
-    this.getGitHub = function () {
-        console.log(this.gitHub);
-    }
-  }
+const Employee = require("../lib/Employee.js");
 
-  module.exports = engineerConstructor;
+class Engineer extends Employee {
+    constructor (name, id, email, github) {
+        super(name, id, email);
+        this.github = github;
+    };
+
+    getGithub() {
+        return(this.github);
+    };
+    getRole() {
+    return "Engineer";
+    }
+    
+};
+
+module.exports = Engineer;

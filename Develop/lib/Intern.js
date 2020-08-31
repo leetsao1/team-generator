@@ -1,23 +1,16 @@
-function internConstructor(name, id, email, school) {
-    this.name = name,
-    this.id = id,
-    this.email = email,
-    this.school = school,
-    this.getName = function () {
-        console.log(this.name);
-    },
-    this.getId = function () {
-        console.log(this.id);
-    },
-    this.getEmail = function () {
-        console.log(this.email);
-    },
-    this.getRole = function () {
-        console.log("Intern");
-    },
-    this.school= function () {
-        console.log(this.school);
-    }
-  }
+const Employee = require("../lib/Employee.js");
 
-  module.exports = internConstructor;
+class Intern extends Employee {
+    constructor(name, id, email, school) {
+        super(name, id, email);
+        this.school = school;
+    };
+    getSchool() {
+        return(this.school);
+    };
+    getRole() {
+        return "Intern";
+    }
+};
+
+module.exports = Intern;
